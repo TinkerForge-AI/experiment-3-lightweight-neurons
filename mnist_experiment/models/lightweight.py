@@ -318,6 +318,24 @@ def get_lightweight_model(model_type='basic', **kwargs):
         raise ValueError(f"Unknown lightweight model type: {model_type}")
 
 
+# Aliases for import (must be before __main__ block)
+class NoAttentionLightweightNetwork(LightweightNetwork):
+    def __init__(self, input_size=784, hidden_sizes=[128, 64], num_classes=10, dropout=0.1):
+        super().__init__(input_size, hidden_sizes, num_classes, use_attention=False, dropout=dropout)
+
+Basic = LightweightNetwork
+Conv = LightweightConvNetwork
+Adaptive = AdaptiveLightweightNetwork
+NoAttention = NoAttentionLightweightNetwork
+
+__all__ = [
+    "Basic", "Conv", "Adaptive", "NoAttention",
+    "LightweightNetwork", "LightweightConvNetwork", "AdaptiveLightweightNetwork", "NoAttentionLightweightNetwork",
+    "SingleWeightNeuron", "AttentionModule", "LightweightNeuronLayer",
+    "get_lightweight_model"
+]
+
+
 if __name__ == "__main__":
     # Test the lightweight models
     print("Testing lightweight models...")
