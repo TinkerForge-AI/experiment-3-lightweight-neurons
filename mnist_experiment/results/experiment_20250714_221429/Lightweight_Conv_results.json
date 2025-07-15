@@ -1,0 +1,23 @@
+{
+  "model_name": "Lightweight_Conv",
+  "final_accuracy": 99.27,
+  "final_loss": 0.0338584802093119,
+  "best_accuracy": 99.34,
+  "total_epochs": 15,
+  "avg_epoch_time": 75.00429212252298,
+  "total_training_time": 1125.0643818378448,
+  "inference_time_full": 8.509992361068726,
+  "avg_batch_inference_time": 0.0524979829788208,
+  "std_batch_inference_time": 0.02433529065674838,
+  "final_memory_usage": {
+    "cpu_memory_gb": 1.2883529663085938,
+    "gpu_memory_gb": 0,
+    "gpu_memory_cached_gb": 0
+  },
+  "model_info": {
+    "name": "Lightweight Conv Network",
+    "total_params": 316715,
+    "trainable_params": 316715,
+    "architecture": "Lightweight Conv + Single-Weight Neurons + Attention"
+  }
+}

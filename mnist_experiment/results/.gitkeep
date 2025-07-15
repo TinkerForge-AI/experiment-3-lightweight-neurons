@@ -1,0 +1,10 @@
+# Results directory for storing experiment outputs
+# This directory will contain:
+# - Trained model checkpoints (.pth files)
+# - Training history logs (.json files) 
+# - Performance metrics and comparisons (.csv files)
+# - Visualization plots (.png files)
+# - Summary reports (.txt files)
+# - TensorBoard logs (in runs/ subdirectory)
+
+# Directory structure will be automatically created during experiments

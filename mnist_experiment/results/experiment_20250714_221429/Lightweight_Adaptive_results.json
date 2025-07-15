@@ -1,0 +1,23 @@
+{
+  "model_name": "Lightweight_Adaptive",
+  "final_accuracy": 97.81,
+  "final_loss": 0.09702189758588742,
+  "best_accuracy": 97.86,
+  "total_epochs": 20,
+  "avg_epoch_time": 85.55914189815522,
+  "total_training_time": 1711.1828379631042,
+  "inference_time_full": 5.688417673110962,
+  "avg_batch_inference_time": 0.030814433097839357,
+  "std_batch_inference_time": 0.008538071634789248,
+  "final_memory_usage": {
+    "cpu_memory_gb": 1.2894630432128906,
+    "gpu_memory_gb": 0,
+    "gpu_memory_cached_gb": 0
+  },
+  "model_info": {
+    "name": "Adaptive Lightweight Network",
+    "total_params": 958030,
+    "trainable_params": 958030,
+    "architecture": "Mixture of Lightweight Experts + Routing"
+  }
+}

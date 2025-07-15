@@ -1,0 +1,57 @@
+================================================================================
+MNIST NEURAL NETWORK ARCHITECTURE COMPARISON REPORT
+================================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Number of models compared: 7
+Best accuracy achieved: 99.61%
+Average accuracy: 98.76%
+Fastest training time: 795.63s
+Fastest inference: 107.02 FPS
+
+TOP PERFORMERS
+----------------------------------------
+1. Traditional_MLP (Score: 0.738)
+   Accuracy: 98.63%
+   Parameters: 535,818
+   Training Time: 795.63s
+
+2. Traditional_CNN (Score: 0.690)
+   Accuracy: 99.53%
+   Parameters: 390,410
+   Training Time: 1558.66s
+
+3. Lightweight_Conv (Score: 0.612)
+   Accuracy: 99.27%
+   Parameters: 316,715
+   Training Time: 1125.06s
+
+DETAILED COMPARISON
+----------------------------------------
+                   Model                                         Architecture  Parameters  Final Accuracy (%)  Best Accuracy (%)  Training Time (s)  Avg Epoch Time (s)  Inference Time (s)  Inference FPS  CPU Memory (GB)  GPU Memory (GB)  Accuracy/Param (×1000)  Accuracy/Time  Memory Efficiency  Overall Score  Rank
+         Traditional_MLP                                      Fully Connected      535818               98.63              98.63         795.628228           53.041882            0.009344     107.024034         1.155331                0                0.184074       0.123965          85.369499       0.738257   1.0
+         Traditional_CNN                                        Convolutional      390410               99.53              99.53        1558.657956          103.910530            0.048647      20.556162         1.209183                0                0.254937       0.063856          82.311794       0.690397   2.0
+        Lightweight_Conv Lightweight Conv + Single-Weight Neurons + Attention      316715               99.27              99.34        1125.064382           75.004292            0.052498      19.048351         1.288353                0                0.313436       0.088235          77.051866       0.612309   3.0
+      Traditional_ResNet                               Residual Convolutional      174970               99.55              99.61        3549.813941          177.490697            0.075665      13.216092         1.284325                0                0.568955       0.028044          77.511555       0.509698   4.0
+Lightweight_No_Attention                    Single-Weight Neurons + Attention      109386               98.20              98.21        1212.027511           80.801834            0.029044      34.430368         1.290558                0                0.897738       0.081021          76.091125       0.407146   5.0
+       Lightweight_Basic                    Single-Weight Neurons + Attention      344154               98.36              98.36        1466.521232           97.768082            0.032783      30.503608         1.287376                0                0.285802       0.067070          76.403451       0.392693   6.0
+    Lightweight_Adaptive             Mixture of Lightweight Experts + Routing      958030               97.81              97.86        1711.182838           85.559142            0.030814      32.452325         1.289463                0                0.102095       0.057159          75.853279       0.174527   7.0
+
+EFFICIENCY ANALYSIS
+----------------------------------------
+Most parameter-efficient: Lightweight_No_Attention
+Fastest training: Traditional_MLP
+Best memory efficiency: Traditional_MLP
+
+RECOMMENDATIONS
+----------------------------------------
+Best overall model: Traditional_MLP
+Recommended for production use based on balanced performance.
+
+ARCHITECTURE COMPARISON
+----------------------------------------
+Best Traditional: Traditional_CNN (Acc: 99.53%)
+Best Lightweight: Lightweight_Conv (Acc: 99.27%)
+Parameter ratio (Traditional/Lightweight): 1.23x
+Training time ratio (Traditional/Lightweight): 1.39x

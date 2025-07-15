@@ -1,0 +1,23 @@
+{
+  "model_name": "Traditional_MLP",
+  "final_accuracy": 98.63,
+  "final_loss": 0.05714716295200518,
+  "best_accuracy": 98.63,
+  "total_epochs": 15,
+  "avg_epoch_time": 53.04188186327617,
+  "total_training_time": 795.6282279491425,
+  "inference_time_full": 7.055716276168823,
+  "avg_batch_inference_time": 0.009343695640563966,
+  "std_batch_inference_time": 0.0076673564974936445,
+  "final_memory_usage": {
+    "cpu_memory_gb": 1.1553306579589844,
+    "gpu_memory_gb": 0,
+    "gpu_memory_cached_gb": 0
+  },
+  "model_info": {
+    "name": "Traditional MLP",
+    "total_params": 535818,
+    "trainable_params": 535818,
+    "architecture": "Fully Connected"
+  }
+}

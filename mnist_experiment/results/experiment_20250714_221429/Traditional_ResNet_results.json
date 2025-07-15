@@ -1,0 +1,23 @@
+{
+  "model_name": "Traditional_ResNet",
+  "final_accuracy": 99.55,
+  "final_loss": 0.01272742335418492,
+  "best_accuracy": 99.61,
+  "total_epochs": 20,
+  "avg_epoch_time": 177.49069707393647,
+  "total_training_time": 3549.8139414787292,
+  "inference_time_full": 16.149969816207886,
+  "avg_batch_inference_time": 0.07566533088684083,
+  "std_batch_inference_time": 0.024390522022333664,
+  "final_memory_usage": {
+    "cpu_memory_gb": 1.2843246459960938,
+    "gpu_memory_gb": 0,
+    "gpu_memory_cached_gb": 0
+  },
+  "model_info": {
+    "name": "Traditional ResNet",
+    "total_params": 174970,
+    "trainable_params": 174970,
+    "architecture": "Residual Convolutional"
+  }
+}

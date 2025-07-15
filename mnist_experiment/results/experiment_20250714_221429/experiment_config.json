@@ -1,0 +1,114 @@
+{
+  "base_results_dir": "./results",
+  "data": {
+    "batch_size": 64,
+    "num_workers": 2
+  },
+  "models": [
+    {
+      "name": "Traditional_MLP",
+      "category": "traditional",
+      "type": "mlp",
+      "enabled": true,
+      "params": {
+        "hidden_sizes": [
+          512,
+          256
+        ],
+        "dropout": 0.2
+      },
+      "training": {
+        "epochs": 15,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Traditional_CNN",
+      "category": "traditional",
+      "type": "cnn",
+      "enabled": true,
+      "params": {
+        "dropout": 0.25
+      },
+      "training": {
+        "epochs": 15,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Traditional_ResNet",
+      "category": "traditional",
+      "type": "resnet",
+      "enabled": true,
+      "params": {},
+      "training": {
+        "epochs": 20,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Lightweight_Basic",
+      "category": "lightweight",
+      "type": "basic",
+      "enabled": true,
+      "params": {
+        "hidden_sizes": [
+          128,
+          64
+        ],
+        "use_attention": true,
+        "dropout": 0.1
+      },
+      "training": {
+        "epochs": 15,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Lightweight_Conv",
+      "category": "lightweight",
+      "type": "conv",
+      "enabled": true,
+      "params": {
+        "use_attention": true,
+        "dropout": 0.1
+      },
+      "training": {
+        "epochs": 15,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Lightweight_Adaptive",
+      "category": "lightweight",
+      "type": "adaptive",
+      "enabled": true,
+      "params": {
+        "num_experts": 4,
+        "expert_size": 32
+      },
+      "training": {
+        "epochs": 20,
+        "lr": 0.001
+      }
+    },
+    {
+      "name": "Lightweight_No_Attention",
+      "category": "lightweight",
+      "type": "basic",
+      "enabled": true,
+      "params": {
+        "hidden_sizes": [
+          128,
+          64
+        ],
+        "use_attention": false,
+        "dropout": 0.1
+      },
+      "training": {
+        "epochs": 15,
+        "lr": 0.001
+      }
+    }
+  ]
+}

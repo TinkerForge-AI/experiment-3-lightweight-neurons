@@ -1,0 +1,23 @@
+{
+  "model_name": "Lightweight_No_Attention",
+  "final_accuracy": 98.2,
+  "final_loss": 0.062058163903063485,
+  "best_accuracy": 98.21,
+  "total_epochs": 15,
+  "avg_epoch_time": 80.80183409055074,
+  "total_training_time": 1212.027511358261,
+  "inference_time_full": 5.642643690109253,
+  "avg_batch_inference_time": 0.029044127464294432,
+  "std_batch_inference_time": 0.013831962251345413,
+  "final_memory_usage": {
+    "cpu_memory_gb": 1.290557861328125,
+    "gpu_memory_gb": 0,
+    "gpu_memory_cached_gb": 0
+  },
+  "model_info": {
+    "name": "Lightweight Network",
+    "total_params": 109386,
+    "trainable_params": 109386,
+    "architecture": "Single-Weight Neurons + Attention"
+  }
+}
